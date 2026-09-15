@@ -1,5 +1,15 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// Reviews marquee: duplicate cards once for a seamless infinite loop,
+// and let a tap/click pause it (hover already pauses via CSS on desktop)
+const reviewsTrack = document.querySelector('.reviews-track');
+if (reviewsTrack) {
+  reviewsTrack.innerHTML += reviewsTrack.innerHTML;
+  reviewsTrack.addEventListener('click', () => {
+    reviewsTrack.classList.toggle('paused');
+  });
+}
+
 // Language toggle (English / Khmer)
 const translatable = document.querySelectorAll('[data-km]');
 translatable.forEach((el) => { el.dataset.en = el.textContent; });
