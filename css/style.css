@@ -196,6 +196,22 @@ img { max-width: 100%; display: block; }
 
 .btn-ghost:hover { background: rgba(19, 92, 92, 0.08); }
 
+.btn-whatsapp {
+  background: #25D366;
+  color: #fff;
+  gap: 0.5rem;
+}
+
+.btn-whatsapp:hover { background: #1ebe5a; transform: translateY(-1px); }
+
+.btn-whatsapp svg { width: 20px; height: 20px; }
+
+.contact-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 /* Hero */
 .hero {
   position: relative;
