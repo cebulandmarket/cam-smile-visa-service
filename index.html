@@ -7,7 +7,7 @@
 <meta name="description" content="Cam Smile Visa Service — trusted visa extensions, retirement (ER) visas, passport handling, driver's license exchange, and scooter rental in Siem Reap, Cambodia. Rated 4.7 stars from 180+ reviews.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Serif+Khmer:wght@500;600;700&family=Noto+Sans+Khmer:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,12 +16,16 @@
   <div class="container header-inner">
     <a href="#top" class="logo">Cam Smile<span>Visa Service</span></a>
     <nav class="nav" id="nav">
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#contact">Contact</a>
+      <a href="#services" data-km="សេវាកម្ម">Services</a>
+      <a href="#about" data-km="អំពីយើង">About</a>
+      <a href="#reviews" data-km="មតិវាយតម្លៃ">Reviews</a>
+      <a href="#contact" data-km="ទំនាក់ទំនង">Contact</a>
     </nav>
-    <a href="tel:+855993130931" class="btn btn-call header-call">Call +855 99 313 093</a>
+    <div class="lang-switch" role="group" aria-label="Language / ភាសា">
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+      <button type="button" class="lang-btn" data-lang="km">ខ្មែរ</button>
+    </div>
+    <a href="tel:+855993130931" class="btn btn-call header-call" data-km="ទូរស័ព្ទ +855 99 313 093">Call +855 99 313 093</a>
     <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -30,92 +34,108 @@
 
 <main id="top">
 
-  <section class="hero">
+  <section class="hero" style="background-image: url('images/hero-street.jpg');">
+    <div class="hero-overlay"></div>
     <div class="container hero-inner">
-      <p class="eyebrow">Siem Reap, Cambodia &middot; Travel Agency</p>
-      <h1>Visa &amp; travel help you can actually trust.</h1>
-      <p class="hero-sub">Cam Smile Visa Service handles visa extensions, retirement visas, passport paperwork, and more for expats and travelers in Siem Reap &mdash; honest, efficient, and hassle-free.</p>
+      <p class="eyebrow" data-km="សៀមរាប កម្ពុជា &middot; ភ្នាក់ងារទេសចរណ៍">Siem Reap, Cambodia &middot; Travel Agency</p>
+      <h1 data-km="ជំនួយវីសា និងដំណើរកម្សាន្ត ដែលអ្នកអាចទុកចិត្តបានមែនទែន។">Visa &amp; travel help you can actually trust.</h1>
+      <p class="hero-sub" data-km="Cam Smile Visa Service ជួយបន្តអាយុវីសា វីសាចូលនិវត្តន៍ ឯកសារលិខិតឆ្លងដែន និងសេវាកម្មផ្សេងទៀត សម្រាប់ជនបរទេស និងភ្ញៀវទេសចរនៅសៀមរាប &mdash; ដោយស្មោះត្រង់ រហ័ស និងគ្មានបញ្ហាលំបាក។">Cam Smile Visa Service handles visa extensions, retirement visas, passport paperwork, and more for expats and travelers in Siem Reap &mdash; honest, efficient, and hassle-free.</p>
       <div class="hero-actions">
-        <a href="tel:+855993130931" class="btn btn-primary">Call Now</a>
-        <a href="#services" class="btn btn-ghost">See Services</a>
-      </div>
-      <div class="hero-rating">
-        <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <span><strong>4.7</strong> out of 5 &middot; 180 Google reviews</span>
+        <a href="tel:+855993130931" class="btn btn-primary" data-km="ទូរស័ព្ទឥឡូវនេះ">Call Now</a>
+        <a href="#services" class="btn btn-ghost" data-km="មើលសេវាកម្ម">See Services</a>
       </div>
     </div>
   </section>
 
-  <section class="strip">
-    <div class="container strip-inner">
-      <div class="strip-item"><strong>Open Daily</strong><span>8:00 AM &ndash; 7:00 PM</span></div>
-      <div class="strip-item"><strong>Location</strong><span>Taphul Rd, Krong Siem Reap</span></div>
-      <div class="strip-item"><strong>180+ Reviews</strong><span>4.7 average rating</span></div>
+  <div class="container">
+    <div class="floating-stats">
+      <div class="strip-item"><strong data-km="បើកជារៀងរាល់ថ្ងៃ">Open Daily</strong><span data-km="៨:00 ព្រឹក &ndash; ៧:00 ល្ងាច">8:00 AM &ndash; 7:00 PM</span></div>
+      <div class="strip-item"><strong data-km="ទីតាំង">Location</strong><span>Taphul Rd, Krong Siem Reap</span></div>
+      <div class="strip-item"><strong data-km="ការវាយតម្លៃជាង ១៨០">180+ Reviews</strong></div>
     </div>
-  </section>
+  </div>
 
   <section id="services" class="section">
     <div class="container">
-      <p class="eyebrow center">What We Do</p>
-      <h2 class="section-title center">Services</h2>
+      <div class="services-intro">
+        <div class="services-intro-media">
+          <img src="images/passport-stamps.jpg" alt="Passport with visa stamps" loading="lazy">
+        </div>
+        <div class="services-intro-text">
+          <p class="eyebrow" data-km="អ្វីដែលយើងធ្វើ">What We Do</p>
+          <h2 class="section-title" data-km="សេវាកម្ម">Services</h2>
+          <p data-km="ចាប់ពីសំណួរវីសាដំបូងរបស់អ្នក រហូតដល់ត្រាចុងក្រោយនៅក្នុងលិខិតឆ្លងដែន Cam Smile Visa Service ជួយគ្រប់គ្រងផ្នែកឯកសារនៃការរស់នៅ និងការមកលេងកម្ពុជា ដើម្បីឲ្យអ្នកផ្តោតលើរឿងសំខាន់ៗផ្សេងទៀត។">From your first visa question to the final stamp in your passport, Cam Smile Visa Service handles the paperwork side of living in and visiting Cambodia so you can focus on everything else.</p>
+        </div>
+      </div>
       <div class="services-grid">
         <div class="service-card">
           <div class="service-icon" aria-hidden="true">&#128196;</div>
-          <h3>Visa Extension</h3>
-          <p>Fast, straightforward visa extensions handled from start to finish so you don't have to navigate the paperwork alone.</p>
+          <h3 data-km="ការបន្តអាយុវីសា">Visa Extension</h3>
+          <p data-km="ការបន្តអាយុវីសាយ៉ាងលឿន និងសាមញ្ញ គ្រប់គ្រងចាប់ពីដើមដល់ចប់ ដើម្បីកុំឲ្យអ្នកត្រូវដោះស្រាយឯកសារតែម្នាក់ឯង។">Fast, straightforward visa extensions handled from start to finish so you don't have to navigate the paperwork alone.</p>
         </div>
         <div class="service-card">
           <div class="service-icon" aria-hidden="true">&#127961;</div>
-          <h3>Retirement &amp; ER Visa</h3>
-          <p>Support for retirement (ER) visas for expats settling in Cambodia, guided by a team that knows the process well.</p>
+          <h3 data-km="វីសាចូលនិវត្តន៍ (ER)">Retirement &amp; ER Visa</h3>
+          <p data-km="ជំនួយផ្នែកវីសាចូលនិវត្តន៍ (ER) សម្រាប់ជនបរទេសដែលមករស់នៅកម្ពុជា ដោយក្រុមការងារដែលយល់ដឹងច្បាស់អំពីដំណើរការ។">Support for retirement (ER) visas for expats settling in Cambodia, guided by a team that knows the process well.</p>
         </div>
         <div class="service-card">
           <div class="service-icon" aria-hidden="true">&#128209;</div>
-          <h3>Passport Handling</h3>
-          <p>Careful, professional handling of your passport and documents throughout the entire application process.</p>
+          <h3 data-km="ការគ្រប់គ្រងលិខិតឆ្លងដែន">Passport Handling</h3>
+          <p data-km="ការថែទាំលិខិតឆ្លងដែន និងឯកសាររបស់អ្នកយ៉ាងប្រុងប្រយ័ត្ន និងមានវិជ្ជាជីវៈ គ្រប់ដំណាក់កាលនៃការស្នើសុំ។">Careful, professional handling of your passport and documents throughout the entire application process.</p>
         </div>
         <div class="service-card">
           <div class="service-icon" aria-hidden="true">&#128739;</div>
-          <h3>Cambodian Driver's License</h3>
-          <p>Assistance exchanging a foreign driver's license for a Cambodian one.</p>
+          <h3 data-km="ប័ណ្ណបើកបររបស់កម្ពុជា">Cambodian Driver's License</h3>
+          <p data-km="ជួយប្តូរប័ណ្ណបើកបររបស់បរទេស ទៅជាប័ណ្ណបើកបររបស់កម្ពុជា។">Assistance exchanging a foreign driver's license for a Cambodian one.</p>
         </div>
         <div class="service-card">
           <div class="service-icon" aria-hidden="true">&#127949;</div>
-          <h3>Scooter Rental</h3>
-          <p>Reliable scooter rental for getting around Siem Reap during your stay.</p>
+          <h3 data-km="ជួលម៉ូតូ">Scooter Rental</h3>
+          <p data-km="សេវាជួលម៉ូតូដែលអាចទុកចិត្តបាន សម្រាប់ធ្វើដំណើរជុំវិញសៀមរាបក្នុងអំឡុងពេលស្នាក់នៅ។">Reliable scooter rental for getting around Siem Reap during your stay.</p>
         </div>
         <div class="service-card">
           <div class="service-icon" aria-hidden="true">&#128172;</div>
-          <h3>Visa Consulting</h3>
-          <p>Clear answers about which visa fits your situation, explained simply before you commit to anything.</p>
+          <h3 data-km="ប្រឹក្សាយោបល់ផ្នែកវីសា">Visa Consulting</h3>
+          <p data-km="ចម្លើយច្បាស់លាស់អំពីប្រភេទវីសាណាដែលសមស្របនឹងស្ថានភាពរបស់អ្នក ពន្យល់យ៉ាងសាមញ្ញ មុននឹងអ្នកសម្រេចចិត្ត។">Clear answers about which visa fits your situation, explained simply before you commit to anything.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="banner" style="background-image: url('images/angkor-sunrise.jpg');">
+    <div class="banner-overlay"></div>
+    <div class="container">
+      <p class="banner-text" data-km="&laquo;ដំណោះស្រាយតែមួយកន្លែង ដែលអាចទុកចិត្តបាន សម្រាប់ជនបរទេស និងភ្ញៀវទេសចរនៅកម្ពុជា។&raquo;">&ldquo;A reliable, one-stop solution for expats and travelers in Cambodia.&rdquo;</p>
+      <p class="banner-cite" data-km="&mdash; ពីមតិវាយតម្លៃលើ Google">&mdash; from a review on Google</p>
     </div>
   </section>
 
   <section id="about" class="section section-alt">
     <div class="container about-inner">
       <div class="about-text">
-        <p class="eyebrow">About Us</p>
-        <h2 class="section-title">A one-stop visa service, built on trust</h2>
-        <p>Cam Smile Visa Service has helped hundreds of expats and travelers in Siem Reap handle visa extensions, retirement visas, and passport paperwork &mdash; without the stress. Travelers consistently point to the same things: clear explanations, honest advice, and paperwork that gets taken care of properly the first time.</p>
+        <p class="eyebrow" data-km="អំពីយើង">About Us</p>
+        <h2 class="section-title" data-km="សេវាវីសាតែមួយកន្លែង សាងសង់លើមូលដ្ឋានទំនុកចិត្ត">A one-stop visa service, built on trust</h2>
+        <p data-km="Cam Smile Visa Service បានជួយជនបរទេស និងភ្ញៀវទេសចររាប់រយនាក់នៅសៀមរាប ក្នុងការបន្តអាយុវីសា វីសាចូលនិវត្តន៍ និងឯកសារលិខិតឆ្លងដែន ដោយគ្មានភាពតានតឹង។ ភ្ញៀវទេសចរតែងតែលើកឡើងអំពីរឿងដូចគ្នា៖ ការពន្យល់ច្បាស់លាស់ ដំបូន្មានស្មោះត្រង់ និងឯកសារដែលត្រូវបានដោះស្រាយត្រឹមត្រូវតាំងពីលើកទីមួយ។">Cam Smile Visa Service has helped hundreds of expats and travelers in Siem Reap handle visa extensions, retirement visas, and passport paperwork &mdash; without the stress. Travelers consistently point to the same things: clear explanations, honest advice, and paperwork that gets taken care of properly the first time.</p>
         <ul class="about-list">
-          <li>Friendly, professional staff who explain the process clearly</li>
-          <li>Efficient turnaround on visa extensions and renewals</li>
-          <li>A reliable, one-stop solution for expats and travelers in Cambodia</li>
+          <li data-km="បុគ្គលិកសុភាពរាបសា និងមានវិជ្ជាជីវៈ ពន្យល់ដំណើរការយ៉ាងច្បាស់លាស់">Friendly, professional staff who explain the process clearly</li>
+          <li data-km="ដំណើរការបន្តអាយុ និងធ្វើឡើងវិញនូវវីសាយ៉ាងរហ័ស">Efficient turnaround on visa extensions and renewals</li>
+          <li data-km="ដំណោះស្រាយតែមួយកន្លែង ដែលអាចទុកចិត្តបាន សម្រាប់ជនបរទេស និងភ្ញៀវទេសចរនៅកម្ពុជា">A reliable, one-stop solution for expats and travelers in Cambodia</li>
         </ul>
       </div>
-      <div class="about-stat">
-        <span class="stat-number">4.7</span>
-        <span class="stat-label">average rating from 180 Google reviews</span>
+      <div class="about-media">
+        <img src="images/tuktuk-street.jpg" alt="Tuk-tuk on a street in Cambodia" loading="lazy">
+        <div class="about-stat">
+          <span class="stat-number">4.7</span>
+          <span class="stat-label" data-km="ការវាយតម្លៃជាមធ្យម &middot; ការវាយតម្លៃ ១៨០ លើ Google">average rating &middot; 180 Google reviews</span>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="reviews" class="section">
     <div class="container">
-      <p class="eyebrow center">Reviews</p>
-      <h2 class="section-title center">What travelers say</h2>
+      <p class="eyebrow center" data-km="មតិវាយតម្លៃ">Reviews</p>
+      <h2 class="section-title center" data-km="អ្វីដែលភ្ញៀវទេសចរនិយាយ">What travelers say</h2>
       <div class="reviews-grid">
         <blockquote class="review-card">
           <div class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
@@ -133,30 +153,30 @@
           <cite>2025efs &middot; Local Guide</cite>
         </blockquote>
       </div>
-      <p class="reviews-source">Reviews shown as posted publicly on Google. <a href="https://maps.app.goo.gl/z8RpvTeGLNYfifXY6" target="_blank" rel="noopener">Read all reviews on Google Maps &rarr;</a></p>
+      <p class="reviews-source"><span data-km="មតិវាយតម្លៃទាំងនេះបង្ហាញដូចបានផ្សាយជាសាធារណៈនៅលើ Google។">Reviews shown as posted publicly on Google.</span> <a href="https://maps.app.goo.gl/z8RpvTeGLNYfifXY6" target="_blank" rel="noopener" data-km="អានមតិវាយតម្លៃទាំងអស់នៅលើ Google Maps &rarr;">Read all reviews on Google Maps &rarr;</a></p>
     </div>
   </section>
 
   <section id="contact" class="section section-alt">
     <div class="container contact-inner">
       <div class="contact-info">
-        <p class="eyebrow">Get In Touch</p>
-        <h2 class="section-title">Visit or call us</h2>
+        <p class="eyebrow" data-km="ទាក់ទងមកយើង">Get In Touch</p>
+        <h2 class="section-title" data-km="មកលេង ឬទូរស័ព្ទមកយើង">Visit or call us</h2>
         <ul class="contact-list">
           <li>
-            <strong>Address</strong>
+            <strong data-km="អាសយដ្ឋាន">Address</strong>
             <span>Taphul Rd, Krong Siem Reap, Cambodia</span>
           </li>
           <li>
-            <strong>Phone</strong>
+            <strong data-km="ទូរស័ព្ទ">Phone</strong>
             <span><a href="tel:+855993130931">+855 99 313 093</a></span>
           </li>
           <li>
-            <strong>Hours</strong>
-            <span>Open daily, 8:00 AM &ndash; 7:00 PM</span>
+            <strong data-km="ម៉ោងបើក">Hours</strong>
+            <span data-km="បើកជារៀងរាល់ថ្ងៃ ៨:00 ព្រឹក &ndash; ៧:00 ល្ងាច">Open daily, 8:00 AM &ndash; 7:00 PM</span>
           </li>
         </ul>
-        <a href="tel:+855993130931" class="btn btn-primary">Call Now</a>
+        <a href="tel:+855993130931" class="btn btn-primary" data-km="ទូរស័ព្ទឥឡូវនេះ">Call Now</a>
       </div>
       <div class="contact-map">
         <iframe
@@ -178,7 +198,10 @@
       <p>Taphul Rd, Krong Siem Reap, Cambodia</p>
       <p><a href="tel:+855993130931">+855 99 313 093</a></p>
     </div>
-    <p class="footer-copy">&copy; <span id="year"></span> Cam Smile Visa Service. All rights reserved.</p>
+    <div class="footer-right">
+      <p class="footer-copy">&copy; <span id="year"></span> Cam Smile Visa Service. <span data-km="រក្សាសិទ្ធិគ្រប់យ៉ាង។">All rights reserved.</span></p>
+      <p class="footer-credit" data-km="រូបថតទីតាំងដោយ Unsplash">Location photography via Unsplash</p>
+    </div>
   </div>
 </footer>
 
